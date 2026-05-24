@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_4623c59732b593f2c0fc28af11711ac2 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_4623c59732b593f2c0fc28af11711ac2" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_4623c59732b593f2c0fc28af11711ac2 = L.map(
+                "map_4623c59732b593f2c0fc28af11711ac2",
+                {
+                    center: [20.0, 0.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 2,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_c1998d6ec78121386a5fde4349c7d162 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_c1998d6ec78121386a5fde4349c7d162.addTo(map_4623c59732b593f2c0fc28af11711ac2);
+        
+    
+            var marker_0aa83018d3b9bfc50c54d3be635906c0 = L.marker(
+                [20.5937, 78.9629],
+                {
+}
+            ).addTo(map_4623c59732b593f2c0fc28af11711ac2);
+        
+    
+        var popup_7d853b7352aba788e01e62b6195fa163 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b3255ab1bad6a6e4bdca342e6a2d82bd = $(`<div id="html_b3255ab1bad6a6e4bdca342e6a2d82bd" style="width: 100.0%; height: 100.0%;">         <div style="background:#1e1e1e; color:white; padding:10px;">         <h3 style="color:#00ff9f;">India</h3>         <b>🕒 Local Time: 14:00:21</b><br><br>         <a href='https://www.aljazeera.com/news/longform/2026/5/23/not-just-the-us-india-to-brazil-51-nations-armed-israel-amid-gaza-war' target='_blank'>Not just the US: India to Brazil, 51 nations armed Israel amid Gaza war</a><br><b>⚪ Neutral</b><br><br><a href='https://www.huffpost.com/entry/ap-as-india-us-marco-rubio_n_6a1132fde4b084c012e70a71' target='_blank'>Rubio Arrives In India Ahead Of Quad Talks As US Tries To Reset Strained Ties</a><br><b>🔴 Negative</b><br><br><a href='https://www.aljazeera.com/news/2026/5/23/are-india-and-pakistan-quietly-preparing-to-restart-dialogue' target='_blank'>Are India and Pakistan quietly preparing to restart dialogue?</a><br><b>⚪ Neutral</b><br><br>         </div>         </div>`)[0];
+                popup_7d853b7352aba788e01e62b6195fa163.setContent(html_b3255ab1bad6a6e4bdca342e6a2d82bd);
+            
+        
+
+        marker_0aa83018d3b9bfc50c54d3be635906c0.bindPopup(popup_7d853b7352aba788e01e62b6195fa163)
+        ;
+
+        
+    
+    
+            marker_0aa83018d3b9bfc50c54d3be635906c0.bindTooltip(
+                `<div>
+                     India
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_3db80231ee5e041b10a43266830ba53e = L.marker(
+                [37.0902, -95.7129],
+                {
+}
+            ).addTo(map_4623c59732b593f2c0fc28af11711ac2);
+        
+    
+        var popup_73752c7f224192cff602985320902729 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c81a12f68fcac3f149a03a418e6bbd43 = $(`<div id="html_c81a12f68fcac3f149a03a418e6bbd43" style="width: 100.0%; height: 100.0%;">         <div style="background:#1e1e1e; color:white; padding:10px;">         <h3 style="color:#00ff9f;">USA</h3>         <b>🕒 Local Time: 04:30:24</b><br><br>         <a href='https://www.zeit.de/news/2026-05/23/frontalzusammenstoss-auf-bundesstrasse-endet-toedlich' target='_blank'>Unfall an der Landesgrenze: Frontalzusammenstoß auf Bundesstraße endet tödlich</a><br><b>⚪ Neutral</b><br><br><a href='https://www.tagesspiegel.de/internationales/greencard-antrage-nur-noch-aus-dem-ausland-usa-verscharfen-regeln-fur-dauerhaften-aufenthaltsstatus-drastisch-15632250.html' target='_blank'>Greencard-Anträge nur noch aus dem Ausland: USA verschärfen Regeln für dauerhaften Aufenthaltsstatus drastisch</a><br><b>⚪ Neutral</b><br><br><a href='https://www.ilsole24ore.com/art/trump-ha-visto-consiglieri-sicurezza-senza-svolta-valuta-attacco-iran-AIVI40ED' target='_blank'>«Trump ha visto i consiglieri alla sicurezza: senza svolta, valuta attacco a Iran»</a><br><b>⚪ Neutral</b><br><br>         </div>         </div>`)[0];
+                popup_73752c7f224192cff602985320902729.setContent(html_c81a12f68fcac3f149a03a418e6bbd43);
+            
+        
+
+        marker_3db80231ee5e041b10a43266830ba53e.bindPopup(popup_73752c7f224192cff602985320902729)
+        ;
+
+        
+    
+    
+            marker_3db80231ee5e041b10a43266830ba53e.bindTooltip(
+                `<div>
+                     USA
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_9f795d35ba04385e581a2e9afa016956 = L.marker(
+                [55.3781, -3.436],
+                {
+}
+            ).addTo(map_4623c59732b593f2c0fc28af11711ac2);
+        
+    
+        var popup_a159a6ab4b62623c4db342eb98529f50 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_63b2d5240dcd75d25d3a2850ed7726b2 = $(`<div id="html_63b2d5240dcd75d25d3a2850ed7726b2" style="width: 100.0%; height: 100.0%;">         <div style="background:#1e1e1e; color:white; padding:10px;">         <h3 style="color:#00ff9f;">UK</h3>         <b>🕒 Local Time: 09:30:27</b><br><br>         <a href='https://www.aljazeera.com/news/longform/2026/5/23/not-just-the-us-india-to-brazil-51-nations-armed-israel-amid-gaza-war' target='_blank'>Not just the US: India to Brazil, 51 nations armed Israel amid Gaza war</a><br><b>⚪ Neutral</b><br><br><a href='https://www.vitaminrush.com/355241/neuro-salt-consumer-report-2026-the-nerve-health-support-supplement-taking-of-neuro-salt-for-neuropathy-natural-wellness/' target='_blank'>Neuro Salt Consumer Report 2026 The Nerve Health Support Supplement Taking Of Neuro Salt for neuropathy Natural Wellness</a><br><b>🟢 Positive</b><br><br><a href='https://spacedaily.com/sd-australia-keeps-being-described-as-a-junior-aukus-partner-but-the-radar-in-its-outback-and-the-port-in-its-northwest-are-quietly-rewriting-who-controls-orbital-traffic/' target='_blank'>Australia keeps being described as a junior AUKUS partner — but the radar in its outback and the port in its northwest are quietly rewriting who controls orbital traffic</a><br><b>⚪ Neutral</b><br><br>         </div>         </div>`)[0];
+                popup_a159a6ab4b62623c4db342eb98529f50.setContent(html_63b2d5240dcd75d25d3a2850ed7726b2);
+            
+        
+
+        marker_9f795d35ba04385e581a2e9afa016956.bindPopup(popup_a159a6ab4b62623c4db342eb98529f50)
+        ;
+
+        
+    
+    
+            marker_9f795d35ba04385e581a2e9afa016956.bindTooltip(
+                `<div>
+                     UK
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_8e8fbcc0c213999c64cea12d948d7e5e = L.marker(
+                [46.2276, 2.2137],
+                {
+}
+            ).addTo(map_4623c59732b593f2c0fc28af11711ac2);
+        
+    
+        var popup_52f5ad7650ff469f8bb9270205acb6e2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1cb7324f33f3ec37144afc082e05c777 = $(`<div id="html_1cb7324f33f3ec37144afc082e05c777" style="width: 100.0%; height: 100.0%;">         <div style="background:#1e1e1e; color:white; padding:10px;">         <h3 style="color:#00ff9f;">France</h3>         <b>🕒 Local Time: 10:30:30</b><br><br>         <a href='https://www.lemonde.fr/en/opinion/article/2026/05/23/who-has-been-studying-france-s-elites-since-pierre-bourdieu-and-what-are-they-learning_6753748_23.html' target='_blank'>Who has been studying France's elites since Pierre Bourdieu, and what are they learning?</a><br><b>⚪ Neutral</b><br><br><a href='https://www.lemonde.fr/en/international/article/2026/05/22/italy-france-uk-germany-urge-israel-to-end-settlement-expansion_6753741_4.html' target='_blank'>Italy, France, UK, Germany urge Israel to end settlement expansion</a><br><b>⚪ Neutral</b><br><br><a href='http://thenextweb.com/news/quick-delivery-giant-getir-quits-france' target='_blank'>Rapid delivery giant Getir quits France, citing regulation hurdles</a><br><b>⚪ Neutral</b><br><br>         </div>         </div>`)[0];
+                popup_52f5ad7650ff469f8bb9270205acb6e2.setContent(html_1cb7324f33f3ec37144afc082e05c777);
+            
+        
+
+        marker_8e8fbcc0c213999c64cea12d948d7e5e.bindPopup(popup_52f5ad7650ff469f8bb9270205acb6e2)
+        ;
+
+        
+    
+    
+            marker_8e8fbcc0c213999c64cea12d948d7e5e.bindTooltip(
+                `<div>
+                     France
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_e8396db578606ecde21e2dd56b95c1ee = L.marker(
+                [36.2048, 138.2529],
+                {
+}
+            ).addTo(map_4623c59732b593f2c0fc28af11711ac2);
+        
+    
+        var popup_6a8cea81fafd40a8ccfd41afa87547ea = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5efd87d73622da0fa608591548573394 = $(`<div id="html_5efd87d73622da0fa608591548573394" style="width: 100.0%; height: 100.0%;">         <div style="background:#1e1e1e; color:white; padding:10px;">         <h3 style="color:#00ff9f;">Japan</h3>         <b>🕒 Local Time: 17:30:32</b><br><br>         <a href='https://www.huffpost.com/entry/ap-as-india-us-marco-rubio_n_6a1132fde4b084c012e70a71' target='_blank'>Rubio Arrives In India Ahead Of Quad Talks As US Tries To Reset Strained Ties</a><br><b>🔴 Negative</b><br><br><a href='https://apnews.com/article/india-us-marco-rubio-quad-86a3a6df1194edc0b133bde23e37bf71' target='_blank'>Rubio arrives in India ahead of meeting with his counterparts from India, Australia and Japan</a><br><b>⚪ Neutral</b><br><br>         </div>         </div>`)[0];
+                popup_6a8cea81fafd40a8ccfd41afa87547ea.setContent(html_5efd87d73622da0fa608591548573394);
+            
+        
+
+        marker_e8396db578606ecde21e2dd56b95c1ee.bindPopup(popup_6a8cea81fafd40a8ccfd41afa87547ea)
+        ;
+
+        
+    
+    
+            marker_e8396db578606ecde21e2dd56b95c1ee.bindTooltip(
+                `<div>
+                     Japan
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_9f922c36b2e40896f0f63d7c74ce3901 = L.marker(
+                [-25.2744, 133.7751],
+                {
+}
+            ).addTo(map_4623c59732b593f2c0fc28af11711ac2);
+        
+    
+        var popup_993065a1d031658781525c30566bfc67 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_581f9d95ac0b6b4b6c91323b33180bb5 = $(`<div id="html_581f9d95ac0b6b4b6c91323b33180bb5" style="width: 100.0%; height: 100.0%;">         <div style="background:#1e1e1e; color:white; padding:10px;">         <h3 style="color:#00ff9f;">Australia</h3>         <b>🕒 Local Time: 18:30:33</b><br><br>         <a href='https://www.news.com.au/finance/economy/federal-budget/landlord-with-100-properties-warns-new-negative-gearing-rules-will-create-twoclass-economy/news-story/fa24f4ae63abe22e0655b61bd7bd7f0e' target='_blank'>Landlord warns negative gearing rules will create “two-class economy”</a><br><b>🔴 Negative</b><br><br><a href='https://www.huffpost.com/entry/ap-as-india-us-marco-rubio_n_6a1132fde4b084c012e70a71' target='_blank'>Rubio Arrives In India Ahead Of Quad Talks As US Tries To Reset Strained Ties</a><br><b>🔴 Negative</b><br><br><a href='https://apnews.com/article/india-us-marco-rubio-quad-86a3a6df1194edc0b133bde23e37bf71' target='_blank'>Rubio arrives in India ahead of meeting with his counterparts from India, Australia and Japan</a><br><b>⚪ Neutral</b><br><br>         </div>         </div>`)[0];
+                popup_993065a1d031658781525c30566bfc67.setContent(html_581f9d95ac0b6b4b6c91323b33180bb5);
+            
+        
+
+        marker_9f922c36b2e40896f0f63d7c74ce3901.bindPopup(popup_993065a1d031658781525c30566bfc67)
+        ;
+
+        
+    
+    
+            marker_9f922c36b2e40896f0f63d7c74ce3901.bindTooltip(
+                `<div>
+                     Australia
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_e93ea8653be58e2afb3593808814f91a = L.marker(
+                [-40.9006, 174.886],
+                {
+}
+            ).addTo(map_4623c59732b593f2c0fc28af11711ac2);
+        
+    
+        var popup_010feed64e322ba95c62e028211a5411 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_71e5e56d2a617248c5ecc53a017235ba = $(`<div id="html_71e5e56d2a617248c5ecc53a017235ba" style="width: 100.0%; height: 100.0%;">         <div style="background:#1e1e1e; color:white; padding:10px;">         <h3 style="color:#00ff9f;">New Zealand</h3>         <b>🕒 Local Time: 20:30:35</b><br><br>         <a href='https://www.bloomberg.com/news/articles/2026-05-23/new-zealand-to-invest-in-drones-fleet-to-shield-maritime-routes' target='_blank'>New Zealand to Invest in Drones, Fleet to Shield Maritime Routes</a><br><b>🟢 Positive</b><br><br>         </div>         </div>`)[0];
+                popup_010feed64e322ba95c62e028211a5411.setContent(html_71e5e56d2a617248c5ecc53a017235ba);
+            
+        
+
+        marker_e93ea8653be58e2afb3593808814f91a.bindPopup(popup_010feed64e322ba95c62e028211a5411)
+        ;
+
+        
+    
+    
+            marker_e93ea8653be58e2afb3593808814f91a.bindTooltip(
+                `<div>
+                     New Zealand
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_b0b719923b246997c7da7f579147f915 = L.marker(
+                [-30.5595, 22.9375],
+                {
+}
+            ).addTo(map_4623c59732b593f2c0fc28af11711ac2);
+        
+    
+        var popup_16a18c0164a7788083420fa18d945f25 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3d3c6711b89401d323db86495530ee3b = $(`<div id="html_3d3c6711b89401d323db86495530ee3b" style="width: 100.0%; height: 100.0%;">         <div style="background:#1e1e1e; color:white; padding:10px;">         <h3 style="color:#00ff9f;">South Africa</h3>         <b>🕒 Local Time: 10:30:37</b><br><br>         <a href='https://www.aljazeera.com/news/2026/5/23/why-are-anti-migrant-attacks-increasing-in-south-africa' target='_blank'>Why are anti-migrant attacks increasing in South Africa?</a><br><b>⚪ Neutral</b><br><br><a href='https://www.news24.com/southafrica/weather/saturdays-weather-severe-thunderstorms-in-kzn-foggy-morning-cloudy-and-cold-elsewhere-20260522-0989' target='_blank'>Saturday’s weather: Severe thunderstorms in KZN; foggy morning, cloudy and cold elsewhere</a><br><b>🔴 Negative</b><br><br><a href='https://www.news24.com/weekender/under-fire-the-security-failures-that-feed-guns-to-criminal-gangs-20260522-0707' target='_blank'>Under fire: The security failures that feed guns to criminal gangs</a><br><b>🔴 Negative</b><br><br>         </div>         </div>`)[0];
+                popup_16a18c0164a7788083420fa18d945f25.setContent(html_3d3c6711b89401d323db86495530ee3b);
+            
+        
+
+        marker_b0b719923b246997c7da7f579147f915.bindPopup(popup_16a18c0164a7788083420fa18d945f25)
+        ;
+
+        
+    
+    
+            marker_b0b719923b246997c7da7f579147f915.bindTooltip(
+                `<div>
+                     South Africa
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_2d0cb00027a7f126e4d61fd835a18956 = L.marker(
+                [9.082, 8.6753],
+                {
+}
+            ).addTo(map_4623c59732b593f2c0fc28af11711ac2);
+        
+    
+        var popup_36ecb2e8fc0ef31d7ecf2082033616f6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_28845bcc578329fd5fe11770c2fb1929 = $(`<div id="html_28845bcc578329fd5fe11770c2fb1929" style="width: 100.0%; height: 100.0%;">         <div style="background:#1e1e1e; color:white; padding:10px;">         <h3 style="color:#00ff9f;">Nigeria</h3>         <b>🕒 Local Time: 09:30:39</b><br><br>         <a href='https://www.lesechos.fr/idees-debats/editos-analyses/tout-le-monde-cherche-du-kerosene-les-stocks-sont-vides-comment-la-crise-petroliere-profite-a-aliko-dangote-lhomme-le-plus-riche-dafrique-2232387' target='_blank'>« Tout le monde cherche du kérosène, les stocks sont vides ! » : comment la crise pétrolière profite à Aliko Dangote, l'homme le plus riche d'Afrique</a><br><b>⚪ Neutral</b><br><br>         </div>         </div>`)[0];
+                popup_36ecb2e8fc0ef31d7ecf2082033616f6.setContent(html_28845bcc578329fd5fe11770c2fb1929);
+            
+        
+
+        marker_2d0cb00027a7f126e4d61fd835a18956.bindPopup(popup_36ecb2e8fc0ef31d7ecf2082033616f6)
+        ;
+
+        
+    
+    
+            marker_2d0cb00027a7f126e4d61fd835a18956.bindTooltip(
+                `<div>
+                     Nigeria
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_1b8ec6b66ac45cac2cfdc6fa91fb329d = L.marker(
+                [40.7128, -74.006],
+                {
+}
+            ).addTo(map_4623c59732b593f2c0fc28af11711ac2);
+        
+    
+        var popup_1801fffc1493ce509b8e9bed5ce427ea = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_17f3dac0a53240de9154236067cc5145 = $(`<div id="html_17f3dac0a53240de9154236067cc5145" style="width: 100.0%; height: 100.0%;">         <div style="background:#1e1e1e; color:white; padding:10px;">         <h3 style="color:#00ff9f;">New York</h3>         <b>🕒 Local Time: 04:30:40</b><br><br>         <a href='https://www.foxsports.com/stories/mlb/yankees-ace-gerrit-cole-delivers-six-shutout-innings-season-debut-after-tommy-john-like-i-never-left' target='_blank'>‘Like I Never Left’: Yankees Ace Gerrit Cole Delivers 6 Shutout Innings In Return From Tommy John</a><br><b>⚪ Neutral</b><br><br><a href='https://www.huffpost.com/entry/trump-new-york-economy_n_6a1124d5e4b0bb04cec78615' target='_blank'>Trump Veers Off-Topic During Speech In New York That Was Supposed To Be On The Economy</a><br><b>🟢 Positive</b><br><br><a href='https://www.cnn.com/2026/05/22/us/staten-island-shipyard-explosion-fire' target='_blank'>1 dead, 36 injured in shipyard explosion and fire on Staten Island, officials say</a><br><b>🔴 Negative</b><br><br>         </div>         </div>`)[0];
+                popup_1801fffc1493ce509b8e9bed5ce427ea.setContent(html_17f3dac0a53240de9154236067cc5145);
+            
+        
+
+        marker_1b8ec6b66ac45cac2cfdc6fa91fb329d.bindPopup(popup_1801fffc1493ce509b8e9bed5ce427ea)
+        ;
+
+        
+    
+    
+            marker_1b8ec6b66ac45cac2cfdc6fa91fb329d.bindTooltip(
+                `<div>
+                     New York
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_0cdd182fefd0255192826801eb1d2aa0 = L.marker(
+                [51.5074, -0.1278],
+                {
+}
+            ).addTo(map_4623c59732b593f2c0fc28af11711ac2);
+        
+    
+        var popup_0980383ef30f59a495d3779d953c4162 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0a08815ae5459f188fccd74bbc177cba = $(`<div id="html_0a08815ae5459f188fccd74bbc177cba" style="width: 100.0%; height: 100.0%;">         <div style="background:#1e1e1e; color:white; padding:10px;">         <h3 style="color:#00ff9f;">London</h3>         <b>🕒 Local Time: 09:30:43</b><br><br>         <a href='https://www.designboom.com/design/sculptural-side-table-handwritten-love-letters-letter-m-maja-stamenkovic/' target='_blank'>a sculptural side table inspired by handwritten love letters and the letter M</a><br><b>🟢 Positive</b><br><br><a href='https://dailycannon.com/2026/05/arsenal-karl-hein-sale/' target='_blank'>Arsenal confirm €3m sale of 24yo</a><br><b>⚪ Neutral</b><br><br><a href='https://www.cbc.ca/news/canada/pizza-hut-retro-classic-9.7205748' target='_blank'>The Pizza Huts from your childhood are making a comeback. Here's why nostalgia sells</a><br><b>⚪ Neutral</b><br><br>         </div>         </div>`)[0];
+                popup_0980383ef30f59a495d3779d953c4162.setContent(html_0a08815ae5459f188fccd74bbc177cba);
+            
+        
+
+        marker_0cdd182fefd0255192826801eb1d2aa0.bindPopup(popup_0980383ef30f59a495d3779d953c4162)
+        ;
+
+        
+    
+    
+            marker_0cdd182fefd0255192826801eb1d2aa0.bindTooltip(
+                `<div>
+                     London
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_8a30a382bb01df1051563c253a3319f8 = L.marker(
+                [35.6762, 139.6503],
+                {
+}
+            ).addTo(map_4623c59732b593f2c0fc28af11711ac2);
+        
+    
+        var popup_1c9de6a0993a6835a07f3a2f4ce1ebfd = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_74116a8fd980049e47355f4bfb53c670 = $(`<div id="html_74116a8fd980049e47355f4bfb53c670" style="width: 100.0%; height: 100.0%;">         <div style="background:#1e1e1e; color:white; padding:10px;">         <h3 style="color:#00ff9f;">Tokyo</h3>         <b>🕒 Local Time: 17:30:44</b><br><br>         <a href='https://www.thehindu.com/sport/tokyo-olympics-deepika-ninth-in-ranking-round-koreans-top-two/article35481902.ece' target='_blank'>Tokyo Olympics | Deepika ninth in ranking round; Koreans top-two</a><br><b>🔴 Negative</b><br><br><a href='https://www.thehindu.com/opinion/editorial/in-search-of-gold-the-hindu-editorial-on-tokyo-olympics-2021/article35478354.ece' target='_blank'>In search of gold: On Tokyo Olympics</a><br><b>⚪ Neutral</b><br><br>         </div>         </div>`)[0];
+                popup_1c9de6a0993a6835a07f3a2f4ce1ebfd.setContent(html_74116a8fd980049e47355f4bfb53c670);
+            
+        
+
+        marker_8a30a382bb01df1051563c253a3319f8.bindPopup(popup_1c9de6a0993a6835a07f3a2f4ce1ebfd)
+        ;
+
+        
+    
+    
+            marker_8a30a382bb01df1051563c253a3319f8.bindTooltip(
+                `<div>
+                     Tokyo
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_2eeb8bceb2757e244066ada991d6d3a0 = L.marker(
+                [13.0827, 80.2707],
+                {
+}
+            ).addTo(map_4623c59732b593f2c0fc28af11711ac2);
+        
+    
+        var popup_dee8c75a2461544758a08106575210d5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9ad097db62216e9e4e046c6ee9e1c0cc = $(`<div id="html_9ad097db62216e9e4e046c6ee9e1c0cc" style="width: 100.0%; height: 100.0%;">         <div style="background:#1e1e1e; color:white; padding:10px;">         <h3 style="color:#00ff9f;">Chennai</h3>         <b>🕒 Local Time: 14:00:47</b><br><br>         <a href='https://www.livemint.com/money/personal-finance/planning-for-retirement-as-a-freelancer-we-ask-experts-how-much-corpus-you-need-and-key-considerations-11779470542093.html' target='_blank'>Planning for retirement as a freelancer? We ask experts how much corpus you need, and key considerations</a><br><b>🟢 Positive</b><br><br><a href='https://www.cricketnews.com/en/cricket/news/when-ms-dhoni-r-ashwin-fan-claiming-leak-team-plans-csk-head-coach/678a44b23dbe702cd6e99f77' target='_blank'>'When MS Dhoni is there...': R Ashwin fires back at fan claiming Ashwin would leak team plans as CSK head coach</a><br><b>⚪ Neutral</b><br><br><a href='https://www.thehindubusinessline.com/economy/cng-prices-hiked-by-rs-1-per-kg-from-today-petrol-diesel-also-see-fresh-increase-across-metros/article71013525.ece' target='_blank'>CNG prices hiked by Rs 1 per Kg from today; petrol, diesel also see fresh increase across metros</a><br><b>🟢 Positive</b><br><br>         </div>         </div>`)[0];
+                popup_dee8c75a2461544758a08106575210d5.setContent(html_9ad097db62216e9e4e046c6ee9e1c0cc);
+            
+        
+
+        marker_2eeb8bceb2757e244066ada991d6d3a0.bindPopup(popup_dee8c75a2461544758a08106575210d5)
+        ;
+
+        
+    
+    
+            marker_2eeb8bceb2757e244066ada991d6d3a0.bindTooltip(
+                `<div>
+                     Chennai
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_098056027bc37f45d78e0048908fc6e8 = L.marker(
+                [26.8467, 80.9462],
+                {
+}
+            ).addTo(map_4623c59732b593f2c0fc28af11711ac2);
+        
+    
+        var popup_e8b16632d0227f77e89f5079af20d834 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b20469cb1d69cb91041dbdd22180f5ab = $(`<div id="html_b20469cb1d69cb91041dbdd22180f5ab" style="width: 100.0%; height: 100.0%;">         <div style="background:#1e1e1e; color:white; padding:10px;">         <h3 style="color:#00ff9f;">Lucknow</h3>         <b>🕒 Local Time: 14:00:51</b><br><br>         <a href='https://economictimes.indiatimes.com/news/sports/kkr-dc-look-for-nothing-less-than-a-win-amid-fading-playoff-hopes/articleshow/131273761.cms' target='_blank'>KKR, DC look for nothing less than a win amid fading playoff hopes</a><br><b>🟢 Positive</b><br><br><a href='https://economictimes.indiatimes.com/news/politics-and-nation/fir-against-congress-president-ajay-rai-for-derogatory-remarks-about-pm-modi-bjp-slams-rahul-gandhi/articleshow/131273601.cms' target='_blank'>Uttar Pradesh: FIR lodged against Congress state President Ajay Rai over alleged 'derogatory' remarks against PM Modi</a><br><b>🔴 Negative</b><br><br><a href='https://economictimes.indiatimes.com/news/politics-and-nation/akhilesh-yadav-exposes-bjps-invisible-weapons-threatening-social-harmony-and-demands-financial-audit/articleshow/131273453.cms' target='_blank'>'Invisible weapons attacking social harmony': Akhilesh Yadav targets BJP, demands audit of funds and assets</a><br><b>🟢 Positive</b><br><br>         </div>         </div>`)[0];
+                popup_e8b16632d0227f77e89f5079af20d834.setContent(html_b20469cb1d69cb91041dbdd22180f5ab);
+            
+        
+
+        marker_098056027bc37f45d78e0048908fc6e8.bindPopup(popup_e8b16632d0227f77e89f5079af20d834)
+        ;
+
+        
+    
+    
+            marker_098056027bc37f45d78e0048908fc6e8.bindTooltip(
+                `<div>
+                     Lucknow
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_3ee47cac01478e17624d029ed7ebcf61 = L.marker(
+                [28.6139, 77.209],
+                {
+}
+            ).addTo(map_4623c59732b593f2c0fc28af11711ac2);
+        
+    
+        var popup_f75b7bdbedce26c8e010a8c31a215915 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_93e1466e04138cc0b81badea76868264 = $(`<div id="html_93e1466e04138cc0b81badea76868264" style="width: 100.0%; height: 100.0%;">         <div style="background:#1e1e1e; color:white; padding:10px;">         <h3 style="color:#00ff9f;">Delhi</h3>         <b>🕒 Local Time: 14:00:52</b><br><br>         <a href='http://timesofindia.indiatimes.com/india/delhi-cmo-expresses-regret-over-televised-address-during-meeting-with-pm-modi/articleshow/82213159.cms' target='_blank'>'Inappropriate': PM Modi objects to 'protocol break' during meeting; Delhi CM expresses regret</a><br><b>⚪ Neutral</b><br><br>         </div>         </div>`)[0];
+                popup_f75b7bdbedce26c8e010a8c31a215915.setContent(html_93e1466e04138cc0b81badea76868264);
+            
+        
+
+        marker_3ee47cac01478e17624d029ed7ebcf61.bindPopup(popup_f75b7bdbedce26c8e010a8c31a215915)
+        ;
+
+        
+    
+    
+            marker_3ee47cac01478e17624d029ed7ebcf61.bindTooltip(
+                `<div>
+                     Delhi
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_a3a47891298ec8de081f74d47681ad25 = L.marker(
+                [19.076, 72.8777],
+                {
+}
+            ).addTo(map_4623c59732b593f2c0fc28af11711ac2);
+        
+    
+        var popup_b793a3243a000f9a0a8dcc7e504cf56e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0754430a53c8e29be7637b8d6a1a503a = $(`<div id="html_0754430a53c8e29be7637b8d6a1a503a" style="width: 100.0%; height: 100.0%;">         <div style="background:#1e1e1e; color:white; padding:10px;">         <h3 style="color:#00ff9f;">Mumbai</h3>         <b>🕒 Local Time: 14:00:53</b><br><br>         <a href='http://timesofindia.indiatimes.com/sports/cricket/ipl/live-blog/punjab-kings-vs-mumbai-indians-pbks-vs-mi-live-score-ipl-2021-17th-match-chennai/liveblog/82214950.cms' target='_blank'>PBKS vs MI Live Score, IPL 2021: Mumbai Indians seek consistency; Punjab Kings eye return to winning ways</a><br><b>🟢 Positive</b><br><br>         </div>         </div>`)[0];
+                popup_b793a3243a000f9a0a8dcc7e504cf56e.setContent(html_0754430a53c8e29be7637b8d6a1a503a);
+            
+        
+
+        marker_a3a47891298ec8de081f74d47681ad25.bindPopup(popup_b793a3243a000f9a0a8dcc7e504cf56e)
+        ;
+
+        
+    
+    
+            marker_a3a47891298ec8de081f74d47681ad25.bindTooltip(
+                `<div>
+                     Mumbai
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_84e71c6d25aa229c89836b6f0aa3833f = L.marker(
+                [-33.8688, 151.2093],
+                {
+}
+            ).addTo(map_4623c59732b593f2c0fc28af11711ac2);
+        
+    
+        var popup_428c829cd362f77f58caac7593312493 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_38bfce902c281f7dfefdb04f20bc0009 = $(`<div id="html_38bfce902c281f7dfefdb04f20bc0009" style="width: 100.0%; height: 100.0%;">         <div style="background:#1e1e1e; color:white; padding:10px;">         <h3 style="color:#00ff9f;">Sydney</h3>         <b>🕒 Local Time: 18:30:56</b><br><br>         <a href='https://www.dailymail.com/news/article-15842699/Lorenzo-Lemalu-shooting-vietnam-aussies-wanted.html' target='_blank'>Two men wanted over brazen execution of Aussie gang leader Lorenzo Lemalu in Vietnam</a><br><b>⚪ Neutral</b><br><br><a href='https://bleedingcool.com/tv/crunchyroll-anime-awards-2026-your-viewing-guide-to-animes-big-night/' target='_blank'>Crunchyroll Anime Awards 2026: Your Viewing Guide to Anime's Big Night</a><br><b>⚪ Neutral</b><br><br><a href='https://www.abc.net.au/news/2026-05-23/federal-budget-softens-adelaide-real-estate-market/106714306' target='_blank'>Caution and long-term thinking as budget adds to softening real estate market</a><br><b>🟢 Positive</b><br><br>         </div>         </div>`)[0];
+                popup_428c829cd362f77f58caac7593312493.setContent(html_38bfce902c281f7dfefdb04f20bc0009);
+            
+        
+
+        marker_84e71c6d25aa229c89836b6f0aa3833f.bindPopup(popup_428c829cd362f77f58caac7593312493)
+        ;
+
+        
+    
+    
+            marker_84e71c6d25aa229c89836b6f0aa3833f.bindTooltip(
+                `<div>
+                     Sydney
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_5692db696cac82b8a2a89e28e4650232 = L.marker(
+                [-37.8136, 144.9631],
+                {
+}
+            ).addTo(map_4623c59732b593f2c0fc28af11711ac2);
+        
+    
+        var popup_a50f2b294745cf282c72e6337392df96 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4d141583eae87ac34e2fecb87eb41cfa = $(`<div id="html_4d141583eae87ac34e2fecb87eb41cfa" style="width: 100.0%; height: 100.0%;">         <div style="background:#1e1e1e; color:white; padding:10px;">         <h3 style="color:#00ff9f;">Melbourne</h3>         <b>🕒 Local Time: 18:30:57</b><br><br>         <a href='https://www.abc.net.au/news/2026-05-23/afl-round-11-live-blog-nm-gc-gee-syd-col-wc-pa-car-pendlebury/106713536' target='_blank'>Live: Suns lead Roos ahead of Pendlebury's record-breaking game</a><br><b>🔴 Negative</b><br><br><a href='https://www.nhl.com/news/nhl-considering-more-unique-destinations-after-australia/c-345683814' target='_blank'>NHL considering more unique destinations after Global Series -- Melbourne</a><br><b>🟢 Positive</b><br><br>         </div>         </div>`)[0];
+                popup_a50f2b294745cf282c72e6337392df96.setContent(html_4d141583eae87ac34e2fecb87eb41cfa);
+            
+        
+
+        marker_5692db696cac82b8a2a89e28e4650232.bindPopup(popup_a50f2b294745cf282c72e6337392df96)
+        ;
+
+        
+    
+    
+            marker_5692db696cac82b8a2a89e28e4650232.bindTooltip(
+                `<div>
+                     Melbourne
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_fb2f416a4c83987e77189f93f4e6c4f5 = L.marker(
+                [-36.8485, 174.7633],
+                {
+}
+            ).addTo(map_4623c59732b593f2c0fc28af11711ac2);
+        
+    
+        var popup_84dbbbe1dbc92902af93fff82c9dbb53 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a98363f5eb3a8ff04ba6cb5e64e1eac2 = $(`<div id="html_a98363f5eb3a8ff04ba6cb5e64e1eac2" style="width: 100.0%; height: 100.0%;">         <div style="background:#1e1e1e; color:white; padding:10px;">         <h3 style="color:#00ff9f;">Auckland</h3>         <b>🕒 Local Time: 20:30:59</b><br><br>         <a href='https://www.nzherald.co.nz/entertainment/violinist-lorna-zhang-on-michael-hills-legacy-as-the-competition-he-founded-continues-without-him/premium/WOFHFIAHFJFSJJ2JA7MIXMRVUE/' target='_blank'>Violinist Lorna Zhang on Michael Hill’s legacy as the competition he founded continues without him</a><br><b>⚪ Neutral</b><br><br><a href='https://www.abc.net.au/news/2026-05-23/elon-musk-sam-altman-s-rivalry-moves-to-wall-street/106701004' target='_blank'>Elon Musk and Sam Altman's rivalry moves from the courtroom to Wall Street</a><br><b>⚪ Neutral</b><br><br><a href='https://www.nzherald.co.nz/business/ai-must-simplify-not-complicate-our-way-of-life-bruce-cotterill/premium/IQ6RXSFGMBDZZKV73RQKU74E74/' target='_blank'>AI must simplify, not complicate, our way of life - Bruce Cotterill</a><br><b>⚪ Neutral</b><br><br>         </div>         </div>`)[0];
+                popup_84dbbbe1dbc92902af93fff82c9dbb53.setContent(html_a98363f5eb3a8ff04ba6cb5e64e1eac2);
+            
+        
+
+        marker_fb2f416a4c83987e77189f93f4e6c4f5.bindPopup(popup_84dbbbe1dbc92902af93fff82c9dbb53)
+        ;
+
+        
+    
+    
+            marker_fb2f416a4c83987e77189f93f4e6c4f5.bindTooltip(
+                `<div>
+                     Auckland
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_784ed4e26c4f556fe2b3589589fceb56 = L.marker(
+                [48.8566, 2.3522],
+                {
+}
+            ).addTo(map_4623c59732b593f2c0fc28af11711ac2);
+        
+    
+        var popup_6f6854145947a238174792788d95b023 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_75db75a339d18b9c086bb844c77386e0 = $(`<div id="html_75db75a339d18b9c086bb844c77386e0" style="width: 100.0%; height: 100.0%;">         <div style="background:#1e1e1e; color:white; padding:10px;">         <h3 style="color:#00ff9f;">Paris</h3>         <b>🕒 Local Time: 10:31:02</b><br><br>         <a href='https://www.bild.de/sport/mehr-sport/alexander-zverev-kaempft-um-fitness-sonntag-start-bei-french-open-6a1158a0be29d4b4607a44fe' target='_blank'>Alexander Zverev kämpft um Fitness: Sonntag Start bei French Open? | Sport</a><br><b>⚪ Neutral</b><br><br><a href='https://www.nbcnews.com/world/israel/freed-gaza-flotilla-activists-allege-israeli-abuse-rape-rcna346593' target='_blank'>Freed Gaza flotilla activists allege Israeli abuse including rape</a><br><b>⚪ Neutral</b><br><br><a href='http://www.businessinsider.com/la-wildfire-pacific-palisades-malibu-celebrities-neighborhood-a-listers-2025-1' target='_blank'>Celebrities who lost homes in LA, Palisades fires: Full list</a><br><b>🟢 Positive</b><br><br>         </div>         </div>`)[0];
+                popup_6f6854145947a238174792788d95b023.setContent(html_75db75a339d18b9c086bb844c77386e0);
+            
+        
+
+        marker_784ed4e26c4f556fe2b3589589fceb56.bindPopup(popup_6f6854145947a238174792788d95b023)
+        ;
+
+        
+    
+    
+            marker_784ed4e26c4f556fe2b3589589fceb56.bindTooltip(
+                `<div>
+                     Paris
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+</script>
+</html>
