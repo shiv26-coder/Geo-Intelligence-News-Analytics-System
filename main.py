@@ -7,7 +7,7 @@ from datetime import datetime
 import pytz
 
 # 🔑 API Key
-API_KEY = "04b51701d45c40bcb5b6b1984ca2a27c"
+API_KEY = "YOUR_NEWSAPI_KEY"
 
 # 🌍 Locations + Timezones
 locations = [
